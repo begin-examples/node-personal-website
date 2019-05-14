@@ -197,9 +197,6 @@ body {
 .opacity-64 {
   opacity: 0.64;
 }
-.font-weight-200 {
-  font-weight: 200;
-}
 .font-weight-300 {
   font-weight: 300;
 }
