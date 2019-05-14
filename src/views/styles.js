@@ -104,6 +104,9 @@ body {
 .margin-right-18 {
   margin-right: 1.125rem;
 }
+.margin-right-12 {
+  margin-right: 0.75rem;
+}
 .margin-right-8 {
   margin-right: 0.5rem;
 }

@@ -25,7 +25,7 @@ module.exports = function MailLink (props) {
   href="mailto:${email}"
 >
   ${Icon({
-    class: 'margin-right-18 fill-FFFFFF',
+    class: 'margin-right-12 fill-FFFFFF',
     style: 'width:1.125rem;height:1rem;',
     href: 'chat-bubble'
   })}
