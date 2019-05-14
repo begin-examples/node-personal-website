@@ -12,7 +12,10 @@ exports.handler = async function Index () {
     linkedin: 'Your linkedin username here',
     instagram: 'Your instagram username here',
     facebook: 'Your instagram username here',
-    image: ''
+    image: 'https://images.unsplash.com/photo-1506535772317-9fdb71c959c6',
+    photographer: 'Ivana Cajina',
+    service: 'Unsplash',
+    credit: 'https://unsplash.com/@von_co'
   })
 
   return {

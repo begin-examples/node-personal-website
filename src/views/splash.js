@@ -1,6 +1,11 @@
+const PhotoCredit = require('./photo-credit.js')
 module.exports = function Aside (props) {
   props = props || {}
-  let image = props.image || '_static/bg.png'
+  let image = props.image || ''
+  let photographer = props.photographer || ''
+  let service = props.service || ''
+  let credit = props.credit || ''
+
   return `
 <aside
   class="
@@ -13,6 +18,11 @@ module.exports = function Aside (props) {
   "
   style="background-image: url(${image});"
 >
+  ${PhotoCredit({
+    photographer,
+    service,
+    credit
+  })}
 </aside>
   `
 }

@@ -170,7 +170,7 @@ body {
 .background-color-F2F0F3 {
   background-color: #F2F0F3;
 }
-.background-color-grey {
+.background-color-overlay {
   background-color: rgba(10, 22, 37, 0.64);
 }
 .background-color-045C9C {
