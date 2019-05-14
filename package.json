@@ -1,0 +1,25 @@
+{
+  "name": "node-personal-website",
+  "version": "1.0.0",
+  "description": "Example Begin personal website",
+  "main": "index.js",
+  "scripts": {
+    "start": "npx sandbox",
+    "test": "tape ./test/**/*.js"
+  },
+  "keywords": [
+    "begin",
+    "serverless",
+    "personal website",
+    "example"
+  ],
+  "author": "@dam",
+  "license": "Apache-2.0",
+  "dependencies": {
+    "@architect/architect": "^5.8.4"
+  },
+  "devDependencies": {
+    "tape": "^4.10.1",
+    "tiny-json-http": "^7.1.2"
+  }
+}
