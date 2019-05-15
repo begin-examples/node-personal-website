@@ -1,4 +1,5 @@
 const Main = require('@architect/views/main.js')
+const staticAssetsHelper = require('./static-assets-helper')
 
 // Customize your site by changing the data below
 exports.handler = async function Index () {
@@ -6,7 +7,7 @@ exports.handler = async function Index () {
     /**
      * Basic bio
      */
-    fullname: 'Your Name', // ← Start by adding your name!
+    fullname: 'Your Name', // ←  Start by adding your name!
     title: 'My personal site!',
     occupation: 'Artist & Photographer',
     location: 'West Glacier, MT',
@@ -27,8 +28,10 @@ exports.handler = async function Index () {
      */
     photographer: 'Ivana Cajina',
     service: 'Unsplash',
-    credit: 'https://unsplash.com/@von_co'
-    // image: 'https://images.unsplash.com/photo-1506535772317-9fdb71c959c6', // Link to your own image from here
+    credit: 'https://unsplash.com/@von_co',
+    image: staticAssetsHelper('background.jpg')
+    // or link to an external image URL such as ↓
+    // image: 'https://images.unsplash.com/photo-1506535772317-9fdb71c959c6'
   })
 
   return {

@@ -1,4 +1,8 @@
-module.exports = `
+module.exports = function Styles (props) {
+  props = props || {}
+  let image = props.image || ''
+
+  return `
 <style>
 * {
   margin: 0;
@@ -24,7 +28,7 @@ body {
   display: inline-flex;
 }
 .background-image {
-  background-image: url('/_static/background.jpg');
+  background-image: url(${image});
 }
 .background-size-cover {
   background-size: cover;
@@ -280,3 +284,4 @@ body {
 }
 </style>
 `
+}

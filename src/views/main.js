@@ -11,8 +11,8 @@ module.exports = function Home (props) {
 <head>
   <meta charset="UTF-8">
   <title>${title}</title>
-  ${Styles}
-  <!-- Replace this with your own custom font link -->
+  ${Styles(props)}
+  <!-- Replace this with your own custom font link and edit Styles font-family -->
   <link href="https://fonts.googleapis.com/css?family=Roboto:300,400" rel="stylesheet">
   <!-- End custom font -->
   <link href="data:image/x-icon;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" rel="icon" type="image/x-icon">
