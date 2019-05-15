@@ -25,10 +25,10 @@ exports.handler = async function Index () {
     /**
      * Layout
      */
-    image: 'https://images.unsplash.com/photo-1506535772317-9fdb71c959c6',
     photographer: 'Ivana Cajina',
     service: 'Unsplash',
     credit: 'https://unsplash.com/@von_co'
+    // image: 'https://images.unsplash.com/photo-1506535772317-9fdb71c959c6', // Link to your own image from here
   })
 
   return {

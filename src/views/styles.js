@@ -24,7 +24,7 @@ body {
   display: inline-flex;
 }
 .background-image {
-  background-image: url('_static/bg.png');
+  background-image: url('/_static/background.png');
 }
 .background-size-cover {
   background-size: cover;
