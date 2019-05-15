@@ -2,7 +2,8 @@ const Icon = require('./icon')
 module.exports = function MailLink (props) {
   props = props || {}
   let email = props.email || ''
-  return `
+  return email
+    ? `
 <a
   class="
     display-inline-flex
@@ -22,14 +23,15 @@ module.exports = function MailLink (props) {
     background-color-hover-058AEA
     transition-background-color
   "
-  href="mailto:${email}"
+  href="mailto:${email}?subject=Hi%20there!"
 >
   ${Icon({
     class: 'margin-right-12 fill-FFFFFF',
     style: 'width:1.125rem;height:1rem;',
     href: 'chat-bubble'
   })}
-  Let's chat
+  Drop me an email!
 </a>
   `
+  : ''
 }

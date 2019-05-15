@@ -1,7 +1,8 @@
 const Icon = require('./icon')
 module.exports = function LocationLink (props) {
   let location = props.location || ''
-  return `
+  return location
+    ? `
 <a
   class="
     display-inline-flex
@@ -21,13 +22,16 @@ module.exports = function LocationLink (props) {
     fill-hover-058AEA
   "
   href="https://www.google.com/maps/place/${location}"
+  target="_blank"
+  rel="noopener"
 >
   ${Icon({
     class: 'margin-right-8 fill-inherit',
     style: 'width:0.4375rem;height:0.625rem;',
     href: 'location-marker'
   })}
-  San Francisco, Ca
+  ${location}
 </a>
   `
+  : ''
 }
