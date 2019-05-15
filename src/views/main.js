@@ -10,6 +10,7 @@ module.exports = function Home (props) {
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1">
   <title>${title}</title>
   ${Styles(props)}
   <!-- Replace this with your own custom font link and edit Styles font-family -->
