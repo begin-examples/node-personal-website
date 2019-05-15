@@ -20,15 +20,14 @@ Head here to check out the complete guide to setting up and customizing your Beg
 
 ## Deploying your site
 
-- Run Begin build steps locally:
+- Run Begin's build steps locally:
   - Lint your code: `npm run lint`
   - Run your tests: `npm t`
-  - If configured, run build steps: `npm run build`
-- To deploy to `staging`
+- Deploy to `staging`
   - Just commit and `git push` to `master`!
-- To deploy to `production`:
+- Deploy to `production`:
   - Use the `Deploy to production` button in Begin, or
-  - Bump your npm version: `npm version [patch|minor|major] && git push origin`
+  - Bump your [npm version](https://docs.npmjs.com/cli/version): `npm version [patch|minor|major] && git push origin`
   - Cut your own git tag: `git tag -a 1.0.0 -m "1.0, here we come" && git push origin 1.0.0`
 
 
