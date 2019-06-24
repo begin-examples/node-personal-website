@@ -11,7 +11,7 @@ let end // saves a reference to be used later to shut down the sandbox
 test('sandbox.start', async t => {
   t.plan(1)
   end = await sandbox.start()
-  t.ok(true, 'opened')
+  t.ok(end, 'opened')
 })
 
 // callback style
