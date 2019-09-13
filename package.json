@@ -17,7 +17,7 @@
   "author": "@dam",
   "license": "Apache-2.0",
   "devDependencies": {
-    "@architect/architect": "^5.9.13",
+    "@architect/architect": "LTS",
     "eslint": "^5.16.0",
     "tap-spec": "^5.0.0",
     "tape": "^4.10.2",
