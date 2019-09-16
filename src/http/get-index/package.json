@@ -1,5 +1,5 @@
 {
-  "name": "opa-get-index",
+  "name": "begin-app",
   "dependencies": {
     "@architect/data": "latest",
     "@architect/functions": "latest"
