@@ -35,7 +35,7 @@ exports.handler = async function Index () {
   })
 
   return {
-    type: 'text/html; charset=utf8',
+    headers: {'content-type': 'text/html; charset=utf8'},
     body
   }
 }
