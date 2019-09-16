@@ -18,7 +18,7 @@
   "license": "Apache-2.0",
   "devDependencies": {
     "@architect/architect": "LTS",
-    "eslint": "^6.3.0",
+    "eslint": "^6.4.0",
     "tap-spec": "^5.0.0",
     "tape": "^4.10.2",
     "tiny-json-http": "^7.1.2"
