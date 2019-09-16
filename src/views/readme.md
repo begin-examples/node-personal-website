@@ -1,11 +1,8 @@
-# The `src/views` directory
+# Share frontend code with `src/views`
 
-By default the contents of `src/views` gets copied into each of your Begin app's `@http` `GET` functions (at `node_modules/@architect/views`) whenever you run:
+By default, the contents of `src/views` gets copied into each of your project's `@http` `GET` functions (at `node_modules/@architect/views` for Node, or `vendor/views` for Ruby and Python) whenever you run `npx sandbox`.
 
-- `npx sandbox` (which starts up your local dev environment)
-- `npx hydrate` (which hydrates your Functions' dependencies)
-
-This means the modules and files in this folder can be accessed from any `@http` `GET` function in your Begin app.
+This means the modules in this folder can be used by any `@http` `GET` function in your app.
 
 For example, here's how you'd require `src/views/layout.js`:
 
@@ -16,16 +13,14 @@ var layout = require('@architect/views/layout')
 
 ## How is this different from `src/shared`?
 
-`src/views` makes it easy to share view components, layouts, and other frontend-facing files that might otherwise bloat your projects' various Functions.
-
-`src/shared` is great for sharing files that every part of your app may need, like common libraries, authentication modules, etc.
+When we looked at how people were using `src/shared`, we saw that people realized it was an easy way to share frontend components. Which is true! But we felt we could make it more explicit while also not bloating every function when the workflow desired was specifically for `@http` `GET`s.
 
 
 ## Use caution!
 
-Everything in `src/views` will be copied into all of your project's `@http` `GET` Functions, which has the potential to bloat your application and make it slow to start and execute.
+Everything in `src/views` will be copied into all of your project's `@http` `GET` HTTP functions, which has the potential to bloat your application.
 
-Remember you want to keep your Functions sub-5MB for optimal coldstart performance.
+Remember: you want to keep your functions sub-5MB for optimal performance.
 
 
 ## Note

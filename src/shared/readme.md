@@ -1,11 +1,8 @@
-# Automagical `src/shared` directory
+# Share code with `src/shared`
 
-The contents of `src/shared` get copied into each of your Begin app's Functions (at `node_modules/@architect/shared`) whenever you run:
+The contents of `src/shared` get copied into each of your project's functions (at `node_modules/@architect/shared` for Node, or `vendor/shared` for Ruby and Python) whenever you run `npx sandbox`.
 
-- `npx sandbox` (which starts up your local dev environment)
-- `npx hydrate` (which hydrates your Functions' dependencies)
-
-This means the modules and files in this folder can be accessed from any function in your Begin app.
+This means the modules in this folder can be used by function in your app.
 
 For example, here's how you'd require `src/shared/layout.js`:
 
@@ -16,20 +13,20 @@ var layout = require('@architect/shared/layout')
 
 ## Organizing `src/shared`
 
-Organize shared code however it makes sense for your project. Here are a few ideas:
+Organize shared code however it makes sense for your app. Here are a few ideas:
 
 - `src/shared/middleware`
 - `src/shared/helpers`
 - `src/shared/lib`
 
-Also, feel free to overwrite the contents of this file to describe your project's shared code structure for your teammates.
+Also, feel free to overwrite the contents of this file to describe your project's shared code structure for your teammates (or delete it altogether).
 
 
 ## Use caution!
 
-Everything in `src/shared` will be copied into all of your project's Functions, which has the potential to bloat your application and make it slow to start and execute.
+Everything in `src/shared` will be copied into all of your cloud functions, which has the potential to quickly bloat your application.
 
-Remember you want to keep your Functions sub-5MB for optimal coldstart performance.
+Remember: you want to keep your functions sub-5MB for optimal performance.
 
 
 ## Note
