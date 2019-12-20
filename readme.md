@@ -4,6 +4,14 @@ $BADGE
 
 A fast, beautiful, customizable personal site running on Begin. Demonstrates server(less)-side rendering, shared components, and static assets.
 
+
+## Deploy your own
+
+$DEPLOY
+
+Deploy your own clone of this app to Begin!
+
+
 <!-- ## The guide (coming soon!)
 
 Head here to check out the complete guide to setting up and customizing your Begin personal site! -->
