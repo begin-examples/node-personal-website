@@ -7,7 +7,7 @@ A fast, beautiful, customizable personal site running on Begin. Demonstrates ser
 
 ## Deploy your own
 
-$DEPLOY
+[![Deploy to Begin](https://static.begin.com/deploy-to-begin.svg)](https://begin.com/apps/create?template=https://github.com/begin-examples/node-personal-website)
 
 Deploy your own clone of this app to Begin!
 
