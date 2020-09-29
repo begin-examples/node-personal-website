@@ -1,11 +1,11 @@
 @app
 begin-app
 
-@static
-fingerprint true
-
 @http
 get /
+
+@static
+# fingerprint true
 
 @tables
 data
