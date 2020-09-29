@@ -5,6 +5,7 @@ updates:
   schedule:
     interval: daily
   open-pull-requests-limit: 99
+
 - package-ecosystem: npm
   directory: "/src/http/get-index"
   schedule:
