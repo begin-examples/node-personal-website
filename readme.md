@@ -19,15 +19,9 @@ Head here to check out the complete guide to setting up and customizing your Beg
 
 ## Getting started
 - Start the local dev server: `npm start`
-- Lint your code: `npm run lint`
-- Run your tests: `npm t`
-
 
 ## Deploying your site
 
-- Run Begin's build steps locally:
-  - Lint your code: `npm run lint`
-  - Run your tests: `npm t`
 - Deploy to `staging`
   - Just commit and `git push` to `master`!
 - Deploy to `production`:
