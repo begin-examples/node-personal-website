@@ -24,7 +24,11 @@
     "start": "npx sandbox"
   },
   "devDependencies": {
-    "@architect/sandbox": "^3.3.7",
+    "@architect/architect": "^8.4.10",
+    "@architect/sandbox": "",
     "@begin/data": "^1.2.3"
+  },
+  "dependencies": {
+    "@architect/functions": "^3.13.9"
   }
 }
