@@ -26,7 +26,7 @@
   "devDependencies": {
     "@architect/architect": "^8.4.10",
     "@architect/sandbox": "",
-    "@begin/data": "^1.2.3"
+    "@begin/data": "^2.0.1"
   },
   "dependencies": {
     "@architect/functions": "^3.13.9"
